@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <image class='logo_img' src='/static/logo.png'></image>
+  <view class='logo_text'>天大信网INC</view>
+  <view class='user_num_input_wrapper'>
+    <i-input i-class='user_num_input' type="number" title="账号" mode="wrapped" placeholder="学号或工号" />
+  </view>
+  <view class='user_password_input_wrapper'>
+    <i-input i-class='user_password_input' title="密码" mode="wrapped" placeholder="校园网密码" />
+  </view>
+
+  <view class='user_login_btn_wrapper' bindtap="clickloginbtn">
+    <i-input value='登陆' i-class='user_login_btn' mode="wrapped" disabled></i-input>
+  </view>
+  
+</view>

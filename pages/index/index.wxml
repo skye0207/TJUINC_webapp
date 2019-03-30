@@ -1,0 +1,91 @@
+<view class='container'>
+  <!-- 主页header部分 -->
+  <view class='header'>
+    <image class='bg_img' src='/static/header_bg.png'></image>
+    <view class='header_content'>
+      <image class='avatar' src='/static/avatar.jpeg'></image>
+      <view class='user_info'>
+        <view class='user_name'>王冠</view>
+        <view class='user_num'>3016218068</view>
+      </view>
+
+      <button class='unbind_btn' bindtap="clickUnbindbtn">点击绑定其他用户</button>
+    </view>
+    
+  </view>
+
+  <view class='concent_container'>
+    <view class='up_part'>
+      <!-- 主页主要内容 -->
+      <view class='ec_canvas_wrapper'>
+         <ec-canvas id='mychart-dom-pie' canvas-id='mychart-pie' ec='{{ec}}' bind:init="echartInit"></ec-canvas>
+      </view>
+
+      <!-- <button class='buypackage_btn'>购买流量包</button> -->
+
+      <view class='up_part_other'>
+        <view class='up_part_other_item'>
+          <view>剩余流量</view>
+          <view>7G</view>
+        </view>
+        <view class='up_part_other_item'>
+          <view>账户余额</view>
+          <view>33元</view>
+        </view>
+        <view class='up_part_other_item'>
+          <view>在线设备</view>
+          <view>2台</view>
+        </view>
+        <view class='up_part_other_item'>
+          <view>本月已用</view>
+          <view>20G</view>
+        </view>
+        <!-- <view class='up_part_other_item'></view> -->
+      </view>
+      
+
+    </view>
+    <view class='down_part'>
+      <i-grid>
+       <i-grid-item i-class='down_part_item'>
+          <view class='down_part_right_up' bindtap="clickChangepwModule">
+            <view class='icon_part'>
+              <image src='/static/bank.png'></image>
+            </view>
+            <view class='text_part'>校园网修改密码</view>
+          </view>
+          <view class='down_part_right_down' bindtap="clickMailModule">
+            <view class='icon_part'>
+              <image src='/static/setup.png'></image>
+            </view>
+            <view class='text_part'>天大邮箱注册</view>
+          </view>
+       </i-grid-item>
+       <i-grid-item i-class='down_part_item'>
+          <view class='down_part_right_up'>
+            <view class='icon_part'>
+              <image src='/static/mails.png'></image>
+            </view>
+            <view class='text_part'>故障报修</view>
+          </view>
+          <view class='down_part_right_down' bindtap="clickBuypackageModule">
+            <view class='icon_part'>
+              <image src='/static/search.png'></image>
+            </view>
+            <view class='text_part'>购买流量包</view>
+          </view>
+       </i-grid-item>
+      </i-grid>
+    </view>
+
+    <view class='info_part'>
+        <i-cell-group>
+          <i-cell i-class='notice_card_item' title="通知栏" is-link value='更多'></i-cell>
+          <i-cell i-class='notice_card_item'  title="关于校园网上网套餐调整的通知" label="2018-12-21 11:50:55"></i-cell>
+          <i-cell i-class='notice_card_item'  title="关于卫津路校区部分楼宇校园网络调整的通知（五）" label="2018-04-08 16:45:28"></i-cell>
+          <i-cell i-class='notice_card_item'  title="关于卫津路校区部分楼宇校园网络调整的通知（四)" label="2018-04-02 15:57:51"></i-cell>
+        </i-cell-group>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/buypackage/buypackage.wxml-->
+<view class='container'>
+  <view class='header_wrapper'>
+    <image class='header_img' src='/static/logo.png'></image>
+    <view class='header_text'>购买流量包</view>
+  </view>
+
+  <view class='input_wrapper first_input_wrapper border_none'>
+      <i-input i-class='user_input' type="number" title="套餐" mode="wrapped" value='学生套餐' disabled/>
+  </view>
+  <view class='input_wrapper input_addition_wrapper'>
+      <view class='input_text_addition'>
+          20元10G包<i-icon type="unfold" />
+      </view>
+      <i-input i-class='user_input border_none' type="number" title="流量包" mode="wrapped" disabled/>
+  </view>
+  <view class='input_wrapper input_addition_wrapper'>
+      <view class='input_num_addition'>
+        <i-input-number i-class='num_addition' value="{{ value1 }}" min="0" max="100" bindchange="handleChange1" />
+      </view>
+      <i-input i-class='user_input' title="数量" mode="wrapped" disabled/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input' title="账户余额" value="10" mode="wrapped" disabled/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input' title="金额"  value="0" mode="wrapped" disabled/>
+  </view>
+
+  <view class='input_wrapper changepw_btn_wrapper' bindtap="clickBuyPackageBtn">
+    <i-input value='提交' i-class='changepw_btn' mode="wrapped" disabled></i-input>
+  </view>
+  
+</view>

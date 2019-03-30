@@ -1,0 +1,28 @@
+<!--pages/changepw/changepw.wxml-->
+<view class='container'>
+  <view class='header_wrapper'>
+    <image class='header_img' src='/static/logo.png'></image>
+    <view class='header_text'>校园网修改密码</view>
+  </view>
+
+  <view class='input_wrapper first_input_wrapper border_none'>
+      <i-input i-class='user_input' type="number" title="账号" mode="wrapped" value='3016218068' disabled/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input border_none' type="number" title="姓名" mode="wrapped" value='王冠' disabled/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input' title="旧密码" mode="wrapped"/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input' title="新密码" mode="wrapped"/>
+  </view>
+  <view class='input_wrapper'>
+      <i-input i-class='user_input' title="确认密码" mode="wrapped"/>
+  </view>
+
+  <view class='input_wrapper changepw_btn_wrapper' bindtap="clickChangepwBtn">
+    <i-input value='提交' i-class='changepw_btn' mode="wrapped" disabled></i-input>
+  </view>
+  
+</view>

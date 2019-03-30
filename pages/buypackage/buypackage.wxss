@@ -1,0 +1,88 @@
+/* pages/buypackage/buypackage.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 70rpx;
+}
+
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.header_img {
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 20rpx;
+}
+
+.header_text {
+  color: #004987;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+
+.input_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: left;
+  margin-top: 5rpx;
+}
+
+.input_addition_wrapper {
+  position: relative;
+}
+
+.input_text_addition {
+  position: absolute;
+  z-index: 1;
+  color: #666;
+  font-size: 32rpx;
+  right: 37%;
+  top: 30%;
+}
+
+
+.input_num_addition {
+  position: absolute;
+  z-index: 1;
+  color: #dddee1;
+  font-size: 32rpx;
+  right: 33%;
+  top: 23%;
+}
+
+.user_input {
+  width: 450rpx;
+  height: 50rpx;
+  text-align: center;
+}
+
+.first_input_wrapper {
+  margin-top: 50rpx;
+}
+
+.border_none view{
+  border: none;
+}
+
+.changepw_btn {
+  width: 450rpx;
+  height: 50rpx;
+  background-color: #004987 !important;
+  text-align: center;
+  color: white !important;
+  font-size: 30rpx !important;
+  border-radius: 4rpx;
+}
+
+.changepw_btn_wrapper {
+  margin-top: 40rpx;
+}

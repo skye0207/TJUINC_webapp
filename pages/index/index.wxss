@@ -1,0 +1,181 @@
+/* pages/index/index.wxss */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 155rpx;
+  flex: none;
+}
+
+.bg_img {
+  height: 155rpx;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.header_content {
+  height: 155rpx;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  width: 115rpx;
+  height: 115rpx;
+  margin-left: 50rpx;
+  border-radius: 50%;
+}
+
+.user_info {
+  color: white;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.user_num {
+  margin-top: 12rpx;
+}
+
+.unbind_btn {
+  font-size: 22rpx;
+  line-height: 48rpx;
+  height: 48rpx;
+  padding: 0 45rpx;
+  background-color: white;
+  border-radius: 2000rpx;
+  color: #338FCC;
+  margin-top: 45rpx;
+}
+
+.concent_container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.up_part {
+  height: 420rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ec_canvas_wrapper {
+  margin-top: 30rpx;
+  width: 280rpx;
+  height: 280rpx;
+  flex: none;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* .buypackage_btn{
+  font-size: 30rpx;
+  line-height: 48rpx;
+  height: 48rpx;
+  padding: 0 70rpx;
+  background-color: #338FCC;
+  border-radius: 2000rpx;
+  color: white;
+  margin-bottom: 30rpx;
+} */
+
+.up_part_other {
+  display: flex;
+  height: 110rpx;
+  flex-direction: row;
+  font-size: 26rpx;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.up_part_other_item {
+  width: 170rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.down_part {
+  height: 350rpx;
+  width: 100%;
+}
+
+.down_part_item {
+  height: 350rpx;
+  padding: 0 !important;
+}
+
+.down_part_right_up {
+  border-bottom: 1rpx solid #e9eaec;
+}
+
+.down_part_right_up, .down_part_right_down {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon_part {
+  width: 150rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_part image{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.text_part {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.info_part {
+  border-top: 1rpx solid #e9eaec;
+  flex: 1 1 auto;
+} 
+
+.notice_card_item_more {
+  color: #2d8cf0;
+  text-align: right
+}
+
+.prev_icon {
+  border: none !important;
+}
+
+.page_wrapper {
+  font-size: 26rpx;
+}
+
+.page_wrapper view {
+  border: none !important;
+}
+
+
+
+
+
