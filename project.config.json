@@ -4,16 +4,17 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx0669a87111d0fec0",
+	"appid": "wxfaac6b9a5cce448d",
 	"projectname": "TJUINC_webapp",
 	"debugOptions": {
 		"hidedInDevtools": []
