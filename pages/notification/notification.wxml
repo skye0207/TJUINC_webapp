@@ -1,0 +1,7 @@
+<!--pages/notification/notification.wxml-->
+<i-cell-group>
+
+<i-spin size="large" fix wx:if="{{ loading }}"> </i-spin>
+  <i-cell wx:for="{{notificationList}}"  i-class='notice_card_item' title="{{item.title}}" label="{{item.time}}"></i-cell>
+  <i-load-more> </i-load-more>
+</i-cell-group>

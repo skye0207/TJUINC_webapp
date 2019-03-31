@@ -59,25 +59,33 @@ Page({
   },
 
   clickUnbindbtn: function() {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/login/login'
     })
   },
 
   clickChangepwModule: function() {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/changepw/changepw'
     })
   },
 
   clickMailModule: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/mail/mail'
     })
   },
   clickBuypackageModule: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/buypackage/buypackage'
     })
+  },
+  clickNotificationMore: function() {
+    wx.navigateTo({
+      url: '/pages/notification/notification'
+    })
+  },
+  clickNotification: function(){
+    
   }
 })

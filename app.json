@@ -6,7 +6,8 @@
     "pages/changepw/changepw",
     "pages/login/login",
     "pages/demo/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/notification/notification"
   ],
   "window": {
     "backgroundTextStyle": "light",
