@@ -55,7 +55,23 @@ Page({
   },
 
   onLoad: function (options) {
-
+    wx.login({
+      success(res) {
+        // 获取到code，发送到服务器用户换取用户openid;
+        if (res.code) {
+          console.log(res.code)
+          wx.request({
+            url: 'http://localhost:8081',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          //TODO: 做错误反馈
+          cosole.log('登陆失败' + res.errMsg);
+        }
+      }
+    })
   },
 
   clickUnbindbtn: function() {
